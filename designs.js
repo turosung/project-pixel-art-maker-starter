@@ -29,4 +29,14 @@ function makeGrid(gridHeight, gridWidth) {
          canvas.appendChild(row); 
     }
 };
-// Your code goes here!
+
+// applying color to pixel art maker
+
+canvas.addEventListener('click', function (event) {
+    if(event.target.style.backgroundColor) {
+        event.target.style.backroundColor = '';
+    }else {
+        event.target.style.backgroundColor = cellColor.value;
+        
+        }
+});
